@@ -1,13 +1,126 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Karla', sans-serif;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  height: 25px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.header .troll{
+  width: 31.31px;
+  height: 26.22px; 
+}
+
+.header h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.7482px;
+  line-height: 24px;
+  letter-spacing: -0.1em;
+  color: #FFFFFF;
+  margin-right: auto;
+  padding-left: 10px;
+}
+
+.header p{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #FFFFFF; 
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+form .inputs{
+  display: grid;
+  gap: 1rem;
+}
+
+form .inputs input{
+  max-width: 230px;
+  height: 35px;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  text-indent: 10px;
+}
+
+form button{
+  max-width: 477px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.1em;
+  color: #FFFFFF;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px; 
+  border: none;
+  cursor: pointer;
+}
+
+.meme--container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 43px;
+  position: relative;
+  padding: 10px;
+}
+
+.meme--container img.meme{
+  border-radius: 3px;
+  max-width: 327px;
+  height: 330px;
+}
+
+.meme--text {
+  position: absolute;
+  word-wrap: break-word;
+  width: 290px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 15px;
+}
+
+.top {
+  top: 15px;
 }
